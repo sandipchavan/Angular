@@ -1,0 +1,12 @@
+.nav-item .nav-link:hover{
+  font-size: 20px;
+  font-family: cursive;
+  font-weight: bold;
+}
+.nav-item .nav-link{
+  font-family: cursive;
+  font-size: 17px;
+}
+.dropdown-menu {
+  min-width: 3rem;
+}

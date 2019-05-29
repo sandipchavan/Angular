@@ -1,0 +1,64 @@
+
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo lighte-1" [containerInside]="false" id="nav_bar">
+
+  <!-- Navbar brand -->
+  <mdb-navbar-brand>
+    <a class="navbar-brand" href="#">
+      <img src="assets/logo/P&D_logo1.jpeg" class="animated pulse infinite border border-danger rounded" height='40'
+        width='40' alt="">
+    </a>
+  </mdb-navbar-brand>
+  <span class="animated heartBeat infinite slow navbar-text  d-lg-none justify-content-start  text-md-center  font-weight-bold text-white">Pojo &
+    Dao</span>
+  <!-- Collapsible content -->
+  <links>
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link waves-light" mdbWavesEffect href="#nav_bar"><fa name="home" ></fa> Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect href="#reel_life"> <fa name="camera-retro"></fa>  Reel Life</a>
+      </li>
+
+    </ul>
+    <!-- Links -->
+
+    <ul class="navbar-nav nav-fill">
+      <span
+        class="animated shake infinite slower d-none d-sm-none d-md-none d-lg-block navbar-text  justify-content-start  text-md-center  font-weight-bold text-white">
+        <fa name="birthday-cake" ></fa>  Happy BirthDay Dear POJO <fa name="birthday-cake" ></fa></span>
+    </ul>
+
+    <ul class=" navbar-nav float-right  ml-lg-auto d-none d-sm-none d-md-none d-lg-block navbar-text justify-content-end   font-weight-bold text-white">
+      <span  ><fa name="calendar" ></fa>  {{today}}</span>
+    </ul>
+
+    <ul class="navbar-nav ml-lg-25 nav-flex-icons overlay zoom">
+      <li class="nav-item avatar dropdown" dropdown>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+          <img src="assets/avatar/pojo_avatar.jpg"  alt=""
+            class="  rounded-circle z-depth-3" height='60' width="60"></a>
+        <div *dropdownMenu class="dropdown-menu  dropdown dropdown-primary" role="menu">
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">{{userName}}</a>
+
+          <a class="dropdown-item waves-light" (click)="logout()" mdbWavesEffect >Log out</a>
+        </div>
+      </li>
+    </ul>
+  </links>
+  <!-- Collapsible content -->
+
+</mdb-navbar>
+<!--/.Navbar-->
+
+<!-- progress bar -->
+<div class="progress md-progress " style="height: 4px">
+  <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" id="progressbar"
+      style="width: 7%; height: 20px" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" appProgressbar></div>
+</div>
+
+
+
+

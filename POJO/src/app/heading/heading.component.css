@@ -1,0 +1,10 @@
+
+@media only screen and (max-width: 900px) {
+  /* For desktop: */
+  #tagline{
+      font-size:0.7rem;
+  }
+  #wish{
+    font-size: 1.1rem;
+  }
+}

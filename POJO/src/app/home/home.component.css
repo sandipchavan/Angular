@@ -1,0 +1,16 @@
+@media (min-width: 992px) {
+
+  mdb-carousel-item {
+    height: 500px;
+    max-height: 500px;
+  }
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}

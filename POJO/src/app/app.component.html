@@ -1,0 +1,30 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+  <div *ngIf="afAuth.user | async as user; else showLogin" id="outer_layout" >
+    <app-heading></app-heading>
+    <div class="sticky-top">
+      <app-header></app-header>
+    </div>
+    <div>
+      <app-home></app-home>
+    </div>
+
+  </div>
+<!-- if user is not logged in -->
+<ng-template  #showLogin>
+  <div class="bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 col-lg-8 m-lg-5">
+          <h1 class="flex-fill">Happy Birthday Dear Puddin Pojo<mat-icon class="animated heartBeat infinite">favorite</mat-icon></h1>
+        </div>
+      </div>
+    </div>
+
+  <button (click)="login()" class="loginBtn loginBtn--google loginButtonPosition">Login with Google</button>
+  </div>
+</ng-template>
+
+
+
+<router-outlet></router-outlet>

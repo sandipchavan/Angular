@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "fir-demo-project",
+    "dao": "pojo-and-dao"
+  }
+}
